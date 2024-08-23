@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Redirect non-www to www
+#RewriteCond %{HTTP_HOST} ^belairautoservice.biz [NC]
+#RewriteRule ^(.*)$ https://www.belairautoservice.biz/$1 [L,R=301]
+
+# Redirect root URL to /index.cfm (if needed)
+#RewriteRule ^$ /index.cfm [L,R=301]
+
+# Ensure correct MIME type for JavaScript files
+#AddType application/javascript .js
+
+# Add X-Content-Type-Options header
+#<IfModule mod_headers.c>
+#    Header set X-Content-Type-Options "nosniff"
+#</IfModule>

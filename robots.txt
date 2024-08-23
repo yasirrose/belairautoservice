@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /old-site/
+Disallow: /background/
+Allow: /css/
+Allow: /fonts/
+Allow: /images/
+Allow: /js/
+
+
+# XML Sitemap
+Sitemap: https://www.belairautoservice.com/sitemap.xml
+
+# HTML Sitemap
+Sitemap: https://www.belairautoservice.com/sitemap.html
+
+# ROR Sitemap
+Sitemap: https://www.belairautoservice.com/ror.xml

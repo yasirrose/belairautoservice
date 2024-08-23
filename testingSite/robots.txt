@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /css/
+Allow: /fonts/
+Allow: /images/
+Allow: /background/
+Allow: /js/
+Disallow: /old-site/

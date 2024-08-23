@@ -1,0 +1,29 @@
+<configuration>
+    <system.webServer>
+        <!-- Add security headers -->
+        <httpProtocol>
+            <customHeaders>
+                <add name="X-Content-Type-Options" value="nosniff" />
+                <add name="X-Frame-Options" value="DENY" />
+                <add name="Referrer-Policy" value="no-referrer-when-downgrade" />
+                <add name="Strict-Transport-Security" value="max-age=31536000; includeSubDomains" />
+                <add name="Content-Security-Policy" value="default-src 'self'; script-src 'self' https://trustedscripts.example.com; object-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; form-action 'self'; base-uri 'self';" />
+            </customHeaders>
+        </httpProtocol>
+
+        <!-- Ensure cookies are secure -->
+        <rewrite>
+            <outboundRules>
+                <rule name="AddSecureFlagToCookies" preCondition="NoSecureFlag">
+                    <match serverVariable="RESPONSE_Set-Cookie" pattern=".*" />
+                    <action type="Rewrite" value="{R:0}; Secure; HttpOnly" />
+                </rule>
+                <preConditions>
+                    <preCondition name="NoSecureFlag">
+                        <add input="{RESPONSE_Set-Cookie}" pattern="; Secure" negate="true" />
+                    </preCondition>
+                </preConditions>
+            </outboundRules>
+        </rewrite>
+    </system.webServer>
+</configuration>
