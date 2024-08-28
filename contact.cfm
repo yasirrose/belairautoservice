@@ -1,4 +1,3 @@
-
 <!--- <cfheader name="Content-Security-Policy" value="
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com;
@@ -16,6 +15,25 @@
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     frame-src 'self' https://insight.adsrvr.org https://www.google.com;
 "> --->
+<!--- 08/27/2024 added by bud hines --->
+<!---<cfheader name="Content-Security-Policy" value="
+    default-src 'self' https://www.belairautoservice.biz;
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com;
+    font-src 'self' 'unsafe-inline' https://www.belairautoservice.biz https://belairautoservice.biz https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
+    img-src 'self' 'unsafe-inline' data: https://www.belairautoservice.biz https://belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    frame-src 'self' 'unsafe-inline' https://insight.adsrvr.org https://www.google.com https://adservices.brandcdn.com;
+">--->
+
+<cfheader name="Content-Security-Policy" value="
+    default-src 'self' https://www.belairautoservice.biz https://belairautoservice.biz;
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com;
+    font-src 'self' 'unsafe-inline' https://www.belairautoservice.biz https://belairautoservice.biz https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
+    img-src 'self' 'unsafe-inline' data: https://www.belairautoservice.biz https://belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    frame-src 'self' 'unsafe-inline' https://insight.adsrvr.org https://www.google.com https://adservices.brandcdn.com;
+">
+
 
 
 
@@ -205,6 +223,11 @@ textarea#cMessage {
 				<div class="widget site-map">
 					<!---<iframe src="https://www.google.com/maps/d/embed?mid=zj0zOtQ5QWdw.kx2mAYhDcvT4" width="640" height="480"></iframe>--->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.463269696318!2d-76.38432028435483!3d39.50403267948161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7e0a0bb15eb7d%3A0xb2f0db3644daf27d!2s1511%20Belair%20Rd%2C%20Fallston%2C%20MD%2021047!5e0!3m2!1sen!2sus!4v1638625933662!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+					<!--- <a href="https://www.google.com/maps/place/1511+Belair+Rd,+Fallston,+MD+21047,+USA/@39.5040341,-76.3847107,17z/data=!3m1!4b1!4m5!3m4!1s0x89c7e0a0bb15eb7d:0xb2f0db3644daf27d!8m2!3d39.5040341!4d-76.3821358?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"  >
+						<img src="https://www.belairautoservice.biz/images/contact-mapImg.webp" alt="Map Image" width="398px" height="285px"  />
+					</a> --->
+
 				</div>
 
 
@@ -216,7 +239,7 @@ textarea#cMessage {
 </div>
 
 
-<script src="js/validate.js"></script>
+<!--- <script src="js/validate.js"></script> --->
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>

@@ -6,6 +6,7 @@
 <cfset variables.metaDescription = "Welcome to Belair Auto Service, your trusted partner for all auto repair needs in Belair.">
 <cfinclude template="header.cfm">
 
+<!--- <cfdump var="#CGi.REMOTE_ADDR#"> --->
 
 <!-- Main Slider -->
 <section class="main-slider">
@@ -18,9 +19,9 @@
             <ul>
 
 
-            	 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-a.jpg"  data-saveperformance="off"  data-title="Classic Cars at Bel Air Auto Service">
+            	 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-a.webp"  data-saveperformance="off"  data-title="Classic Cars at Bel Air Auto Service">
                 <!---<img src="images/main-slider/slider-image-A.jpg" width="3264" <!--height="2448"-->  height="1000" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">--->
-                <img src="images/main-slider/slider-image-a.jpg" alt="Three cars by Bel Air Auto Service: lime green Roadrunner, red Mustang GT, and deep red Pontiac GTO." width="3264" height="1000" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                <img src="images/main-slider/slider-image-a.webp" alt="Three cars by Bel Air Auto Service: lime green Roadrunner, red Mustang GT, and deep red Pontiac GTO." width="3264" height="1000" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
                 <div class="tp-caption lfl tp-resizeme"
                 data-x="center" data-hoffset="0"
                 data-y="center" data-voffset="-50"
@@ -53,8 +54,8 @@
                 </li>
 
 
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-1.jpg"  data-saveperformance="off"  data-title="Chrome Engine on Red Background">
-                <img src="images/main-slider/slider-image-1.jpg" height="400" width="960" alt="chrome engine displayed against a red background for our car repair website"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-1.webp"  data-saveperformance="off"  data-title="Chrome Engine on Red Background">
+                <img src="images/main-slider/slider-image-1.webp" height="400" width="960" alt="chrome engine displayed against a red background for our car repair website"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
 
                 <div class="tp-caption lfl tp-resizeme"
                 data-x="center" data-hoffset="0"
@@ -87,8 +88,8 @@
 
                 </li>
 
-                <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-2.jpg"  data-saveperformance="off"  data-title="Side View of Chrome Engine">
-                <img src="images/main-slider/slider-image-2.jpg" height="400" width="960"  alt="side view of a beautiful all chrome engine for our car repair website" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-2.webp"  data-saveperformance="off"  data-title="Side View of Chrome Engine">
+                <img src="images/main-slider/slider-image-2.webp" height="400" width="960"  alt="side view of a beautiful all chrome engine for our car repair website" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
 
                 <div class="tp-caption lft tp-resizeme"
                 data-x="center" data-hoffset="0"
@@ -121,8 +122,8 @@
 
                 </li>
 
-                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-3.jpg"  data-saveperformance="off"  data-title="Mechanic Working Under Raised Car">
-                <img src="images/main-slider/slider-image-3.jpg" height="400" width="960" alt="Mechanic standing under a raised car, working on the underside of the engine"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-3.webp"  data-saveperformance="off"  data-title="Mechanic Working Under Raised Car">
+                <img src="images/main-slider/slider-image-3.webp" height="400" width="960" alt="Mechanic standing under a raised car, working on the underside of the engine"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
 
                 <div class="tp-caption lfr tp-resizeme"
                 data-x="center" data-hoffset="0"
@@ -436,7 +437,7 @@
     	<div class="testimonials-slider column-carousel three-column">
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/budhines.jpg" alt="budhines" height="80" width="81" ></figure>
+            	<figure class="image-box"><img src="images/resource/budhines.webp" alt="budhines" height="80" width="81" loading="lazy" ></figure>
                 <div class="slide-text">
                     <p>&quot;I took my Jaguar to a nearby Jaguar dealer who said I needed to replace my ABS and my switches for about $7,000. I brought my car to Chris Woodies and they determined that my switches needed to be repaired and they did this for $350. My Jag has been driving great ever since.&quot;</p>
                 </div>
@@ -448,7 +449,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/chadjagermeisterwilloughby.jpg" height="56" width="56" alt="ChadJagermeisterWilloughby"></figure>
+            	<figure class="image-box"><img src="images/resource/chadjagermeisterwilloughby.webp" height="56" width="56" alt="ChadJagermeisterWilloughby" loading="lazy" ></figure>
                 <div class="slide-text">
                     <p>&quot;This place is great and they had my vehicle done in no time and the staff is super friendly. Definitely recommend them&quot;</p>
                 </div>
@@ -460,7 +461,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.jpg" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" alt="blank-face" height="80" width="81" loading="lazy"></figure>
                 <div class="slide-text">
                     <p>&quot;They do good work and explain what they are doing. I never leave there wondering what they did.&quot;</p>
                 </div>
@@ -472,7 +473,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.jpg" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;Employees of this business were very nice and I appreciated their good attitude.&quot;</p>
                 </div>
@@ -484,7 +485,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.jpg" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;As always professional and competent service.&quot;</p>
                 </div>
@@ -496,7 +497,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.jpg" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;The business did an excellent job, and they left the vehicle clean.&quot;</p>
                 </div>
@@ -508,7 +509,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.jpg" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot; I received very thorough, honest, and timely service. Also, reasonable prices with no hidden costs.&quot;</p>
                 </div>
@@ -520,7 +521,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.jpg" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;I have been to Bel Air Auto Service just a few times and I think ya'll are great! You have helped me quickly each time. The cost hast been good and competitive.&quot;</p>
                 </div>
@@ -532,7 +533,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.jpg" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot; This facility has cheap labor and good service.&quot;</p>
                 </div>
@@ -732,8 +733,13 @@
 --->
 <section id="map-location" class="map-location">
     <!--- <iframe src="https://www.google.com/maps/d/embed?mid=zj0zOtQ5QWdw.kx2mAYhDcvT4" width="100%" height="500"></iframe> --->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.4783573313216!2d-76.38425128435495!3d39.50369207948171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7e0a0b8edab85%3A0x2ddc01f8ce11328a!2s1515%20Belair%20Rd%2C%20Fallston%2C%20MD%2021047!5e0!3m2!1sen!2sus!4v1638625285695!5m2!1sen!2sus" width="2000" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Location map for Bel Air Auto Service" >
-    </iframe>
+    <!--- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.4783573313216!2d-76.38425128435495!3d39.50369207948171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7e0a0b8edab85%3A0x2ddc01f8ce11328a!2s1515%20Belair%20Rd%2C%20Fallston%2C%20MD%2021047!5e0!3m2!1sen!2sus!4v1638625285695!5m2!1sen!2sus" width="2000" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Location map for Bel Air Auto Service" >
+    </iframe> --->
+    
+    <a href="https://www.google.com/maps/place/1515+Belair+Rd,+Fallston,+MD+21047,+USA/@39.5036411,-76.3844062,17z/data=!3m1!4b1!4m6!3m5!1s0x89c7e0a0c7925e95:0x424a341bb6f04cec!8m2!3d39.5036411!4d-76.3818313!16s%2Fg%2F11c132tvkf?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"  >
+        <img src="https://www.belairautoservice.biz/images/map-img.webp" alt="Map Image" width="1800" height="500"  />
+    </a>
+
 </section>
 
 

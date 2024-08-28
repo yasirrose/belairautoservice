@@ -77,7 +77,7 @@
                     	<div class="footer-widget newsletter-widget">
                         	<h3>FOLLOW US</h3>
                             <ul class="social-bttn-box">
-                            	<li><a href="https://www.facebook.com/Bel-Air-Auto-Service-115837198476058/"><img src="https://www.belairautoservice.biz/images/facebook-btn.png" alt="Facebook icon"  height="40" width="182" /></a></li>
+                            	<li><a href="https://www.facebook.com/Bel-Air-Auto-Service-115837198476058/"><img src="https://www.belairautoservice.biz/images/facebook-btn.png" alt="Facebook icon"  height="40" width="182" loading="lazy" /></a></li>
                                <!--- <li><a href="https://plus.google.com/114670278640307030410"><img src="images/Google-plus-btn.png" /></a></li>--->
                             </ul>
                         </div>
@@ -101,9 +101,9 @@
                     <div class="col-md-4 col-sm-12 col-xs-12">
                         <div class="social-links">
                             <a href="https://www.facebook.com/Bel-Air-Auto-Service-115837198476058/" class="fa fa-facebook-f"></a> 
-                            <a class="success-alert alert-button thums-icons footer" data-isgood="true" href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsup-img.png" alt="thumbs up" height="30" width="50"></a>
+                            <a class="success-alert alert-button thums-icons footer" data-isgood="true" href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsup-img2.webp" alt="thumbs up" height="30" width="50" loading="lazy" ></a>
 
-                            <a class="danger-alert alert-button thums-icons footer" data-isgood="false"  href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsdown-img.png" alt="thumbs down" height="30" width="50" style="margin-top:8px;"></a>
+                            <a class="danger-alert alert-button thums-icons footer" data-isgood="false"  href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsdown-img1.webp" alt="thumbs down" loading="lazy" height="30" width="50" style="margin-top:8px;"></a>
                             <div class="confirmtion-box alert alert-success thumb-up">
                                 <div class="inner-confirmation-box">
                                     <button type="button" class="close">&times;</button>
@@ -151,11 +151,11 @@
 <link href="css/responsive.css" rel="stylesheet">
 <script src="js/jquery.js"></script>
 ----->
-<link href="https://www.belairautoservice.biz/css/mix-css-min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-<script src="https://www.belairautoservice.biz/js/jquery.js" defer></script>
-<script src="https://www.belairautoservice.biz/js/validate.js" defer></script>
-<script src='https://cdn.jsdelivr.net/gmaps4rails/2.1.2/gmaps4rails.js' defer> </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js' defer> </script>
+<link href="https://www.belairautoservice.biz/css/mix-css-min.css" rel="stylesheet" >
+<!--- <script src="https://www.belairautoservice.biz/js/jquery.js" defer></script> --->
+<!--- <script src="https://www.belairautoservice.biz/js/validate.js" defer></script> --->
+<!--- <script src='https://cdn.jsdelivr.net/gmaps4rails/2.1.2/gmaps4rails.js' defer> </script> --->
+<!--- <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js' defer> </script> --->
 <script async src="https://www.belairautoservice.biz/js/mix-js-min.js" ></script>
 <!--JS Files
 <script src="js/bootstrap.min.js"></script>
@@ -166,6 +166,17 @@
 <script src="js/wow.js"></script>
 <script src="js/script.js"></script>
 -->
+
+ <!-- Optional: Lazy Load Google Maps -->
+
+<!--- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var lazyScript = document.createElement('script');
+        lazyScript.src = 'https://cdn.jsdelivr.net/gmaps4rails/2.1.2/gmaps4rails.js';
+        document.body.appendChild(lazyScript);
+    });
+</script> --->
+
 <style>
     /*Cookie Consent Begin*/
 #cookieConsent {
@@ -252,7 +263,7 @@
 </script>
 <!-- Tracking tag. Place in the <body> section of webpage -->
 <!-- Privacy policy at http://tag.brandcdn.com/privacy -->
-<script src="https://tag.brandcdn.com/autoscript/belairautoservice_vfzstmvvouvuwgc9/belairautoservice.js"></script>
+<!--- <script src="https://tag.brandcdn.com/autoscript/belairautoservice_vfzstmvvouvuwgc9/belairautoservice.js"></script> --->
 <script>
     $(".success-alert").click(function(){
         $(".confirmtion-box.alert-success").show('slow');

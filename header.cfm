@@ -1,3 +1,4 @@
+<!--- OLD HEADER --->
 <!--- <cfheader name="Content-Security-Policy" value="
     default-src 'self';
     script-src 'self' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com;
@@ -8,14 +9,52 @@
     object-src 'self';
 "> --->
 
-<cfheader name="Content-Security-Policy" value="
+<!--- NEW HEADER COMMENTING OUT ON 08/24/2024 TO SEE IF THIS FIXES THE PROBLEM --->
+<!--- <cfheader name="Content-Security-Policy" value="
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com;
-    font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
+    
     img-src 'self' data: https://www.belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com https://belairautoservice.biz;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    style-src 'self' 'unsafe-inline';
     frame-src 'self' https://insight.adsrvr.org https://www.google.com https://adservices.brandcdn.com;
+"> --->
+
+<!--- NEW HEADER adjusted CSP without the 'unsafe-inline' and 'unsafe-eval' directives MADE ON 8/24/2024 AT 8:48 PM commented out at 8:53 because this did not work either. need to test locally--->
+<!---<cfheader name="Content-Security-Policy" value="
+    default-src 'self' https://www.belairautoservice.biz;
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com;
+    font-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
+    img-src 'self' 'unsafe-inline' data: https://www.belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com https://belairautoservice.biz;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    frame-src 'self' 'unsafe-inline' https://insight.adsrvr.org https://www.google.com https://adservices.brandcdn.com;
+">--->
+
+<!--- new cfheader for testing on 8/26/2024 by bud hines--->
+<!---
+<cfheader name="Content-Security-Policy" value="
+    default-src 'self' https://*;
+    script-src 'self' 'unsafe-inline' https://*;
+    font-src 'self' https://*;
+    img-src 'self' data: https://*;
+    style-src 'self' 'unsafe-inline' https://*;
+    frame-src 'self' https://*;
+    object-src 'self';
+    report-uri /csp-violation-report-endpoint;
 ">
+--->
+
+<!--- new cfheader by bud hines on 08/27/2026--->
+<cfheader name="Content-Security-Policy" value="
+    default-src 'self' https://www.belairautoservice.biz;
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com;
+    font-src 'self' 'unsafe-inline' https://www.belairautoservice.biz https://belairautoservice.biz https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
+    img-src 'self' 'unsafe-inline' data: https://www.belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    frame-src 'self' 'unsafe-inline' https://insight.adsrvr.org https://www.google.com https://adservices.brandcdn.com;
+">
+
+<!--- added this new header to resolve cors issue --->
+<cfheader name="Access-Control-Allow-Origin" value="https://belairautoservice.biz">
 
 
 
@@ -43,7 +82,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- Google Tag Manager -->
-    <script>
+    <!--- <script>
         (function(w,d,s,l,i){
             w[l]=w[l]||[];
             w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
@@ -53,7 +92,7 @@
             j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
             f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-TV7837Z');
-    </script>
+    </script> --->
     <!-- End Google Tag Manager -->
 
     <cfoutput>
@@ -94,7 +133,14 @@
    Oil Changes, MD State Inspections, Air Conditioning Service, Transmission Service">
 
     <!-- Stylesheets -->
-    <link href="https://www.belairautoservice.biz/css/styles.pure.css" rel="stylesheet">
+    <!--- <link href="https://www.belairautoservice.biz/css/styles.pure.css" rel="stylesheet"> --->
+    <link href="https://www.belairautoservice.biz/css/styles.pure.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+
+    <!--- <link rel="preload" href="https://www.belairautoservice.biz/css/styles.pure.css" as="style">
+    
+    <link rel="stylesheet" href="https://www.belairautoservice.biz/css/styles.pure.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://www.belairautoservice.biz/css/styles.pure.css"></noscript> --->
+
     <link rel="shortcut icon" href="https://www.belairautoservice.biz/images/icons/favicon.ico" />
     <!---<link href="css/responsive.css" rel="stylesheet">--->
     
@@ -106,9 +152,9 @@
       
     
     <!-- jQuery -->
-    <script src="https://www.belairautoservice.biz/js/jquery.js"></script>
+    <script src="https://www.belairautoservice.biz/js/jquery.js" deffer></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>  
+    <!--- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"> </script>   --->
     <!--- <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.0/jquery.validate.min.js"></script> --->
     
     <!-- Inline Styles -->
@@ -139,8 +185,8 @@
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV7837Z"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!--- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV7837Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> --->
 <!-- End Google Tag Manager (noscript) -->
 <div class="page-wrapper">
 
@@ -168,7 +214,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-md-4 col-sm-4 col-xs-12 logo">
 						<a href="index.cfm">
                    <!-- <img src="images/chriswoodies_logo7.png" alt="Carshire" title="Carshire">-->
-                     	<img src="https://www.belairautoservice.biz/images/logo-2.png" alt="Belair Auto Service" title="Belair Auto Service" height="150" width="382">
+
+                   <!--- <picture>
+                    <!-- WebP format -->
+                    <source srcset="https://www.belairautoservice.biz/images/logo-2.webp" type="image/webp">
+                    <!-- PNG fallback -->
+                    <img src="https://www.belairautoservice.biz/images/logo-2.png" alt="Belair Auto Service" title="Belair Auto Service" height="150" width="382">
+                </picture> --->
+
+                     	<img src="https://www.belairautoservice.biz/images/logo-2.webp" alt="Belair Auto Service" title="Belair Auto Service" height="150" width="382" loading="lazy" >
                     	</a>
 					</div>
                     <div class="col-lg-6 header-top-infos col-lg-offset-2">
@@ -196,7 +250,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <li>
                                 <div class="clearfix ">
                                     <p style="font-size:24px;">
-                                    <img src="https://www.belairautoservice.biz/images/icons/header-phone.png" alt="Phone number icon" height="30" width="30" >
+                                    <img src="https://www.belairautoservice.biz/images/icons/header-phone.png" alt="Phone number icon" height="30" width="30" loading="lazy" >
 
 
                                     <b>Call Us Now</b><br><br>410.879.2254<br> <br> 410.838.7227</p>
@@ -205,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<li>
 								<div class="clearfix ">
                                                                     <p style="font-size:24px;">
-								<img src="https://www.belairautoservice.biz/images/icons/header-timer.png" alt="Business hours icon" height="31" width="27" >
+								<img src="https://www.belairautoservice.biz/images/icons/header-timer.png" alt="Business hours icon" height="31" width="27" loading="lazy" >
 									<b>Our Hours</b><br> <br><br><br>  M-F: 8:00 - 5:00</p>
 								</div>
 							</li>
@@ -255,8 +309,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="social-links text-right">
                             <!---<a href="https://www.facebook.com/pages/Chris-Woodies-Bel-Air-Auto-Service/213696858678389" class="fa fa-facebook-f"></a>--->
                             <a href="https://www.facebook.com/chrisbelairauto/" class="fa fa-facebook-f"></a>
-                            <a class="success-alert alert-button thums-icons" data-isgood="true" href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsup-img.png" alt="thumbs up" height="20" width="50" ></a>
-                            <a class="danger-alert alert-button thums-icons" data-isgood="false"  href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsdown-img.png" alt="thumbs down" height="20" width="50" ></a>
+                            <a class="success-alert alert-button thums-icons" data-isgood="true" href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsup-img2.webp" alt="thumbs up" height="20" width="50" loading="lazy" ></a>
+                            <a class="danger-alert alert-button thums-icons" data-isgood="false"  href="javascript:void(0);"> <img src="https://www.belairautoservice.biz/images/thumsdown-img1.webp"  alt="thumbs down" height="20" width="50" loading="lazy" ></a>
                             <div class="confirmtion-box alert alert-success thumb-up">
                                 <div class="inner-confirmation-box">
                                     <button type="button" class="close">&times;</button>
@@ -284,3 +338,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
     
     <!--- <cfdump var="#CGi.REMOTE_ADDR#"  110.39.156.90> --->
+
+   

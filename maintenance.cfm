@@ -1,10 +1,21 @@
-<cfheader name="Content-Security-Policy" value="
+<!--- commented out on 08/24/2024 at 9:10 pm --->
+<!---<cfheader name="Content-Security-Policy" value="
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com;
     font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
     img-src 'self' data: https://www.belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     frame-src 'self' https://insight.adsrvr.org https://www.google.com;
+">--->
+
+<!--- 08/27/2024 added by bud hines --->
+<cfheader name="Content-Security-Policy" value="
+    default-src 'self' https://www.belairautoservice.biz;
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com;
+    font-src 'self' 'unsafe-inline' https://www.belairautoservice.biz https://belairautoservice.biz https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
+    img-src 'self' 'unsafe-inline' data: https://www.belairautoservice.biz https://belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    frame-src 'self' 'unsafe-inline' https://insight.adsrvr.org https://www.google.com https://adservices.brandcdn.com;
 ">
 
 <cfcache action="cache" timespan="#createtimespan(1,0,0,0)#">
@@ -14,7 +25,7 @@
 <cfinclude template="header.cfm">
 
     <!-- Page Banner -->
-    <section class="page-banner" style="background-image:url(<cfoutput>#application.baseURL#</cfoutput>images/background/page-banner-1.jpg);">
+    <section class="page-banner" style="background-image:url(<cfoutput>#application.baseURL#</cfoutput>images/background/page-banner-1.webp);">
          <div class="auto-container">
             <div class="page-title"><h1>Maintenance</h1></div>
             <div class="bread-crumb text-right">
@@ -67,17 +78,19 @@ And as you know, when you pay later you probably have done real damage to your c
                 </article>
 
              <br>
+
+             <div class="row">
             	<article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 	<div class="inner">
-                <img src="images/changetire.png" alt="change tire" height="142" width="210">
+                        <img src="images/changetire.webp" alt="change tire" height="142" width="210" style="margin-top:8px" >
                         <!---<div class="icon"><span class="flaticon-power19"></span></div>--->
-                        <div class="icon"><img src="images/change_the_oil.png" alt="change the oil" height="142" width="210"></div>
+                        <div class="icon"><img src="images/change_the_oil.webp" alt="change the oil" height="142" width="210"></div>
 
                         <h3 class="post-title">Change Your Oil</h3>
                         <div class="text">
-One of the most important things you can do for your car
-Is to change your oil every 5,000 miles or every 3 months.
-           </div>
+                            One of the most important things you can do for your car
+                            Is to change your oil every 5,000 miles or every 3 months.
+                        </div>
                         <!---<div class="text">All of our virtual professionals are highly experienced in the areas in which they work and have been through a thorough recruitment process.</div>--->
 
                 	</div>
@@ -85,24 +98,26 @@ Is to change your oil every 5,000 miles or every 3 months.
 
                 <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                 	<div class="inner">
-                <img src="images/changetire.png" alt="change tire" height="142" width="210">
+                    <img src="images/changetire.webp" alt="change tire" height="142" width="210">
                         <!---<div class="icon"><span class="flaticon-gasoline"></span></div>--->
                         <h3 class="post-title">Rotate Your Tires</h3>
                         <div class="text">When you come in for an oil change
-we can also rotate you tires. Tire rotation can make a big difference in prolonging the life of your tires.</div>
+                        we can also rotate you tires. Tire rotation can make a big difference in prolonging the life of your tires.</div>
                 	</div>
                 </article>
 
                 <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
                 	<div class="inner">
-                  <img src="images/aligntire.png" alt="align tire" height="142" width="210">
-                  <!---      <div class="icon"><span class="flaticon-transport100"></span></div>--->
+                    <img src="images/aligntire.webp" alt="align tire" height="142" width="210">
+                    <!---      <div class="icon"><span class="flaticon-transport100"></span></div>--->
                         <h3 class="post-title">Align Your Tires</h3>
                         <div class="text">If your car starts to veer one way or another
-Then come in and get us to align your tires. It will increase the life of your tires and make your driving safer.</div>
+                        Then come in and get us to align your tires. It will increase the life of your tires and make your driving safer.
+                        </div>
                 	</div>
                 </article>
-
+            </div>
+            <div class="row">
                 <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                 	<div class="inner">
                         <div class="icon"><span class="flaticon-vehicle71"></span></div>
@@ -126,7 +141,7 @@ Then come in and get us to align your tires. It will increase the life of your t
                         <div class="text">We will change your oil, lube your car and change your filters same day.</div>
                 	</div>
                 </article>
-
+            </div>
             </div>
         </div>
     </section>

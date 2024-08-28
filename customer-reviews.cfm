@@ -1,11 +1,21 @@
-
-    <cfheader name="Content-Security-Policy" value="
+ <!--- commented out cfheader on 08/24/2024 at 9:12 pm --->
+ <!---<cfheader name="Content-Security-Policy" value="
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com;
     font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
     img-src 'self' data: https://www.belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     frame-src 'self' https://insight.adsrvr.org https://www.google.com;
+">--->
+
+<!--- 08/27/2024 added by bud hines --->
+<cfheader name="Content-Security-Policy" value="
+    default-src 'self' https://www.belairautoservice.biz;
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com https://www.google.com https://www.gstatic.com;
+    font-src 'self' 'unsafe-inline' https://www.belairautoservice.biz https://belairautoservice.biz https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
+    img-src 'self' 'unsafe-inline' data: https://www.belairautoservice.biz https://belairautoservice.biz https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    frame-src 'self' 'unsafe-inline' https://insight.adsrvr.org https://www.google.com https://adservices.brandcdn.com;
 ">
 
 <cfcache action="cache" timespan="#createtimespan(1,0,0,0)#">
@@ -174,7 +184,7 @@ h2.post-title {
 
 </style>
          <!-- Page Banner -->
-        <section class="page-banner" style="background-image:url(images/customer-review-banner.png); padding-bottom: 40px;">
+        <section class="page-banner" style="background-image:url(images/customer-review-banner.webp); padding-bottom: 40px;">
                 <div class="auto-container">
                         <div class="page-title"><h1>Customer Reviews</h1></div>
                         <div class="bread-crumb text-right"></div>
@@ -228,7 +238,7 @@ h2.post-title {
                     <div class="Review-Main">
                         <div class="Review-Box">
                             <div class="Box-data">
-                                <img src="https://www.belairautoservice.biz/images/image1.png" alt="image1" height="80" width="80" >
+                                <img src="https://www.belairautoservice.biz/images/image1.webp" alt="image1" height="80" width="80" >
                                 <div class="Inner-Data">
                                     <h3>Regina T.</h3>
                                     <img src="https://www.belairautoservice.biz/images/stars.png" alt="stars" height="35" width="121" >
@@ -252,7 +262,7 @@ h2.post-title {
                         </div>
                         <div class="Review-Box">
                             <div class="Box-data">
-                                <img src="https://www.belairautoservice.biz/images/image2.png" alt="image2" height="80" width="80" >
+                                <img src="https://www.belairautoservice.biz/images/image2.webp" alt="image2" height="80" width="80" >
                                 <div class="Inner-Data">
                                     <h4>Bud Hines - Fallston</h4>
                                     <img src="https://www.belairautoservice.biz/images/stars.png" alt="stars" height="35" width="121" >

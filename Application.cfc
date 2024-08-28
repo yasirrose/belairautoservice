@@ -14,7 +14,9 @@
         <cfif FindNoCase("127.0.0.1", cgi.server_name)>
             <cfset application.baseURL = "http://127.0.0.1:8500/belairautoservice_07_25_2024/wwwroot/">
         <cfelse>
+           <!--- changes on the next two lines made by bud hines on 08/26/2024 --->
             <cfset application.baseURL = "https://www.belairautoservice.biz/">
+           <!--- <cfset application.baseURL = "https://belairautoservice.biz/">--->
         </cfif>
         <cfset application.imagesPath = application.baseURL & "images/">
         <cfset application.jsPath = application.baseURL & "js/">

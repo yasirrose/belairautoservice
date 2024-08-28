@@ -1,12 +1,11 @@
-
-<cfheader name="Content-Security-Policy" value="
+<!---<cfheader name="Content-Security-Policy" value="
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://tag.brandcdn.com https://adservices.brandcdn.com https://maps.googleapis.com https://maps.gstatic.com;
     font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://tag.brandcdn.com;
     img-src 'self' data: https://www.belairautoservice.biz/testingSite https://www.googletagmanager.com https://insight.adsrvr.org https://maps.googleapis.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     frame-src 'self' https://insight.adsrvr.org https://www.google.com;
-">
+">--->
 
 <cfif IsDefined("form.quickemail")>
   <cfif form.name is not "" AND form.quickemail is not "" And form.message is not "">
