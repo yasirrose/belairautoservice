@@ -1,10 +1,19 @@
-
-
-
 <cfset variables.pageTitle = "Home - Chris Woodie's Bel Air Auto Service">
 <cfset variables.CanonicalLink = "https://www.belairautoservice.biz/index.cfm">
 <cfset variables.metaDescription = "Welcome to Belair Auto Service, your trusted partner for all auto repair needs in Belair.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <cfinclude template="header.cfm">
+
+<style>
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40;
+  color: #fb4848; /* Corrected way to set the color */
+}
+</style>
 
 <!--- <cfdump var="#CGi.REMOTE_ADDR#"> --->
 
@@ -21,7 +30,7 @@
 
             	 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-a.webp"  data-saveperformance="off"  data-title="Classic Cars at Bel Air Auto Service">
                 <!---<img src="images/main-slider/slider-image-A.jpg" width="3264" <!--height="2448"-->  height="1000" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">--->
-                <img src="images/main-slider/slider-image-a.webp" alt="Three cars by Bel Air Auto Service: lime green Roadrunner, red Mustang GT, and deep red Pontiac GTO." width="3264" height="1000" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
+                <img src="images/main-slider/slider-image-a.webp" alt="Three cars by Bel Air Auto Service: lime green Roadrunner, red Mustang GT, and deep red Pontiac GTO." title="Three cars by Bel Air Auto Service: lime green Roadrunner, red Mustang GT, and deep red Pontiac GTO." width="3264" height="1000" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
                 <div class="tp-caption lfl tp-resizeme"
                 data-x="center" data-hoffset="0"
                 data-y="center" data-voffset="-50"
@@ -55,7 +64,7 @@
 
 
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-1.webp"  data-saveperformance="off"  data-title="Chrome Engine on Red Background">
-                <img src="images/main-slider/slider-image-1.webp" height="400" width="960" alt="chrome engine displayed against a red background for our car repair website"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
+                <img src="images/main-slider/slider-image-1.webp" height="400" width="960" alt="chrome engine displayed against a red background for our car repair website" title="Slider Image 1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
 
                 <div class="tp-caption lfl tp-resizeme"
                 data-x="center" data-hoffset="0"
@@ -89,7 +98,7 @@
                 </li>
 
                 <li data-transition="slidedown" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-2.webp"  data-saveperformance="off"  data-title="Side View of Chrome Engine">
-                <img src="images/main-slider/slider-image-2.webp" height="400" width="960"  alt="side view of a beautiful all chrome engine for our car repair website" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
+                <img src="images/main-slider/slider-image-2.webp" height="400" width="960"  alt="side view of a beautiful all chrome engine for our car repair website" title="Slider Image 2" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
 
                 <div class="tp-caption lft tp-resizeme"
                 data-x="center" data-hoffset="0"
@@ -123,7 +132,7 @@
                 </li>
 
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/slider-image-3.webp"  data-saveperformance="off"  data-title="Mechanic Working Under Raised Car">
-                <img src="images/main-slider/slider-image-3.webp" height="400" width="960" alt="Mechanic standing under a raised car, working on the underside of the engine"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
+                <img src="images/main-slider/slider-image-3.webp" height="400" width="960" alt="Mechanic standing under a raised car, working on the underside of the engine" title="Slider Image 3" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" loading="lazy">
 
                 <div class="tp-caption lfr tp-resizeme"
                 data-x="center" data-hoffset="0"
@@ -164,7 +173,113 @@
         </div>
     </div>
 </section>
+<!--Why Us-->
+<!---
+<section class="why-us">
+	<div class="auto-container">
+    	<div class="row clearfix">
+        <H1>Welcome to Chris Woodie's Bel Air Auto Service!</H1>
+        <br>
+        	<!--Text Content-->
+            <div class="col-md-5 col-sm-12 col-xs-12 text-content">
+            	<div class="title-box">
+                	    <h3>Welcome!</h3>
+                    </div>
+                    <div class="text">
+                	<p>We have over 20 years of car repair experience and we serve the Fallston, Bel Air, Forest Hill, Harford County areas with dependable and affordable auto care.</p>
+               	<p>We provide 24 hour towing,service, computer diagnostic and electrical service, engine and transmission repairs, AC service, brakes, alignments, tires, mufflers, shocks, struts, etc. We are an inspection station and we honor all extended warranty contracts. All work guaranteed.</p>
+            </div>
+            </div>
 
+            <!--Tabs Side-->
+            <div class="col-md-7 col-sm-12 col-xs-12">
+            	<div class="row clearfix">
+
+
+
+                    <!---<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Repair and inspection</h4><p>Computer Diagnostics</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    --->
+                      <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" style="background-color:Orange;">
+                        <a href="#" class="tab-link">
+                            <div class="icon">
+                                <!-- Adjust the size using width and height for the img tag -->
+                                <cfoutput>
+                                <img src="#application.baseURL#wwwroot/fonts/car_repair_70dp_EA3323_FILL0_wght400_GRAD0_opsz48.svg" alt="Driving Apps Wheel Icon" style="width: 60px; height: 60px;">
+                                </cfoutput>
+                            </div>
+                            <h4><strong>Repairs and Inspections<strong></h4>
+                            <p style="color:white;">Computer Diagnostics</p>
+                            <p style="color:white;">Brakes and Engine Analysis</p>
+                            <!--- <span class="arrow fa fa-angle-right"></span> --->
+                        </a>
+                    </div>
+
+                    <!---<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-wrench1"></span></div><h4>Oil Changes and TuneUps</h4><p>You can count on us to Maintain your Vehicle</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    --->
+                     <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" style="background-color:Tomato;">
+                        <a href="#" class="tab-link">
+                            <div class="icon">
+                                <!-- Adjust the size using width and height for the img tag -->
+                                <cfoutput>
+                                <img src="#application.baseURL#/fonts/oil_barrel_70dp_EA3323_FILL0_wght400_GRAD0_opsz48.svg" alt="Driving Apps Wheel Icon" style="width: 60px; height: 60px;">
+                                </cfoutput>
+                            </div>
+                            <h4><strong>Oil Changes and Tune Ups</strong></h4>
+                            <p style="color:white;">You can count on us to maintain your vehicle</p>
+                            <!--- <span class="arrow fa fa-angle-right"></span> --->
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="row clearfix">
+                    <!--- <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-automobile8"></span></div><h4>MD State Inspections</h4><p>We want to make sure you know about the car you are inspecting</p><span class="arrow fa fa-angle-right"></span></a></div> --->
+                   <!--- <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box"><span class="material-symbols-outlined">swap_driving_apps_wheel</span><h4>MD State Inspections</h4><p>We want to make sure you know about the car you are inspecting</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    --->
+                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" style="background-color:MediumSeaGreen;">
+                        <a href="#" class="tab-link">
+                            <div class="icon">
+                                <!-- Adjust the size using width and height for the img tag -->
+                                <cfoutput>
+                                <img src="#application.baseURL#/fonts/local_taxi_70dp_EA3323_FILL0_wght400_GRAD0_opsz48.svg" alt="Driving Apps Wheel Icon" style="width: 60px; height: 60px;">
+                                </cfoutput>
+                            </div>
+                            <h4><strong>Maryland State Inspections</strong></h4>
+                            <p style="color:white;">We want you to know about the car you are buying</p>
+                            <!--- <span class="arrow fa fa-angle-right"></span> --->
+                        </a>
+                    </div>
+                    
+                    
+                    
+                    <!---<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Tire Maintenance</h4><p>Wheel alignment and Balancing</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    --->
+                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" style="background-color:DodgerBlue;" data-wow-delay="0ms" data-wow-duration="1000ms">
+                        <a href="#" class="tab-link">
+                            <div class="icon">
+                                <!-- Adjust the size using width and height for the img tag -->
+                                <cfoutput>
+                                <img src="#application.baseURL#/fonts/re_repair_70dp_EA3323_FILL0_wght400_GRAD0_opsz48.svg" alt="Driving Apps Wheel Icon" style="width: 60px; height: 60px;">
+                                </cfoutput>
+                            </div>
+                            <h4><strong>Tire Maintenance<strong></h4>
+                            <p style="color:white;">Wheel Alignment and Balancing</p>
+                            <!--- <span class="arrow fa fa-angle-right"></span> --->
+                        </a>
+                    </div>
+
+                    <!--- <span class="material-symbols-outlined">
+                        swap_driving_apps_wheel
+                    </span> --->
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+--->
 <!--Why Us-->
 <section class="why-us">
 	<div class="auto-container">
@@ -188,19 +303,66 @@
 
 
 
-                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Repair and inspection</h4><p>Computer Diagnostics</p><span class="arrow fa fa-angle-right"></span></a></div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-wrench1"></span></div><h4>Oil Changes and TuneUps</h4><p>You can count on us to Maintain your Vehicle</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    <!--- <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Repair and inspection</h4><p>Computer Diagnostics</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-wrench1"></span></div><h4>Oil Changes and TuneUps</h4><p>You can count on us to Maintain your Vehicle</p><span class="arrow fa fa-angle-right"></span></a></div> --->
+
+                    <!--- <div class="col-md-6 col-sm-6 col-xs-12 box"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Repair and inspection</h4><p>Computer Diagnostics</p><span class="arrow fa fa-angle-right"></span></a></div> --->
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 box">
+                        <div class="tab-link">
+                           <div class="icon"><span class="flaticon-transport100"></span></div>
+                           <h4>Repair and inspection</h4>
+                           <p>Computer Diagnostics</p>
+                           <span class="arrow fa fa-angle-right"></span>
+                        </div>
+                     </div>
+
+                    <!--- <div class="col-md-6 col-sm-6 col-xs-12 box"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-wrench1"></span></div><h4>Oil Changes and TuneUps</h4><p>You can count on us to Maintain your Vehicle</p><span class="arrow fa fa-angle-right"></span></a></div> --->
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 box">
+                        <div class="tab-link">
+                           <div class="icon"><span class="flaticon-wrench1"></span></div>
+                           <h4>Oil Changes and TuneUps</h4>
+                           <p>You can count on us to Maintain your Vehicle</p>
+                           <span class="arrow fa fa-angle-right"></span>
+                        </div>
+                     </div>
+
                 </div>
 
                 <div class="row clearfix">
-                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-automobile8"></span></div><h4>MD State Inspections</h4><p>We want to make sure you know about the car you are inspecting</p><span class="arrow fa fa-angle-right"></span></a></div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Tire Maintenance</h4><p>Wheel alignment and Balancing</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    <!--- <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-automobile8"></span></div><h4>MD State Inspections</h4><p>We want to make sure you know about the car you are inspecting</p><span class="arrow fa fa-angle-right"></span></a></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp box" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Tire Maintenance</h4><p>Wheel alignment and Balancing</p><span class="arrow fa fa-angle-right"></span></a></div> --->
+
+                    <!--- <div class="col-md-6 col-sm-6 col-xs-12 box"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-automobile8"></span></div><h4>MD State Inspections</h4><p>We want to make sure you know about the car you are inspecting</p><span class="arrow fa fa-angle-right"></span></a></div> --->
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 box">
+                        <div class="tab-link">
+                           <div class="icon"><span class="flaticon-automobile8"></span></div>
+                           <h4>MD State Inspections</h4>
+                           <p>We want to make sure you know about the car you are inspecting</p>
+                           <span class="arrow fa fa-angle-right"></span>
+                        </div>
+                     </div>
+
+                    <!--- <div class="col-md-6 col-sm-6 col-xs-12 box"><a href="#" class="tab-link"><div class="icon"><span class="flaticon-transport100"></span></div><h4>Tire Maintenance</h4><p>Wheel alignment and Balancing</p><span class="arrow fa fa-angle-right"></span></a></div> --->
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 box">
+                        <div class="tab-link">
+                           <div class="icon"><span class="flaticon-transport100"></span></div>
+                           <h4>Tire Maintenance</h4>
+                           <p>Wheel alignment and Balancing</p>
+                           <span class="arrow fa fa-angle-right"></span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
 <!---
 <!--Featured Services
 <section class="featured-services column-view">
@@ -437,7 +599,7 @@
     	<div class="testimonials-slider column-carousel three-column">
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/budhines.webp" alt="budhines" height="80" width="81" loading="lazy" ></figure>
+            	<figure class="image-box"><img src="images/resource/budhines.webp" title="budhines" alt="budhines" height="80" width="81" loading="lazy" ></figure>
                 <div class="slide-text">
                     <p>&quot;I took my Jaguar to a nearby Jaguar dealer who said I needed to replace my ABS and my switches for about $7,000. I brought my car to Chris Woodies and they determined that my switches needed to be repaired and they did this for $350. My Jag has been driving great ever since.&quot;</p>
                 </div>
@@ -449,7 +611,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/chadjagermeisterwilloughby.webp" height="56" width="56" alt="ChadJagermeisterWilloughby" loading="lazy" ></figure>
+            	<figure class="image-box"><img src="images/resource/chadjagermeisterwilloughby.webp" height="56" width="56" alt="ChadJagermeisterWilloughby" title="ChadJagermeisterWilloughby" loading="lazy" ></figure>
                 <div class="slide-text">
                     <p>&quot;This place is great and they had my vehicle done in no time and the staff is super friendly. Definitely recommend them&quot;</p>
                 </div>
@@ -461,7 +623,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.webp" alt="blank-face" height="80" width="81" loading="lazy"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" title="blank-face" alt="blank-face" height="80" width="81" loading="lazy"></figure>
                 <div class="slide-text">
                     <p>&quot;They do good work and explain what they are doing. I never leave there wondering what they did.&quot;</p>
                 </div>
@@ -473,7 +635,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" title="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;Employees of this business were very nice and I appreciated their good attitude.&quot;</p>
                 </div>
@@ -485,7 +647,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" title="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;As always professional and competent service.&quot;</p>
                 </div>
@@ -497,7 +659,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" title="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;The business did an excellent job, and they left the vehicle clean.&quot;</p>
                 </div>
@@ -509,7 +671,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" title="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot; I received very thorough, honest, and timely service. Also, reasonable prices with no hidden costs.&quot;</p>
                 </div>
@@ -521,7 +683,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" title="blank-face" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot;I have been to Bel Air Auto Service just a few times and I think ya'll are great! You have helped me quickly each time. The cost hast been good and competitive.&quot;</p>
                 </div>
@@ -533,7 +695,7 @@
             </article>
 
             <article class="slide-item">
-            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" alt="blank-face" height="80" width="81"></figure>
+            	<figure class="image-box"><img src="images/resource/blank-face.webp" loading="lazy" title="blank-face" alt="blank-face" height="80" width="81"></figure>
                 <div class="slide-text">
                     <p>&quot; This facility has cheap labor and good service.&quot;</p>
                 </div>
@@ -736,8 +898,8 @@
     <!--- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.4783573313216!2d-76.38425128435495!3d39.50369207948171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7e0a0b8edab85%3A0x2ddc01f8ce11328a!2s1515%20Belair%20Rd%2C%20Fallston%2C%20MD%2021047!5e0!3m2!1sen!2sus!4v1638625285695!5m2!1sen!2sus" width="2000" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Location map for Bel Air Auto Service" >
     </iframe> --->
     
-    <a href="https://www.google.com/maps/place/1515+Belair+Rd,+Fallston,+MD+21047,+USA/@39.5036411,-76.3844062,17z/data=!3m1!4b1!4m6!3m5!1s0x89c7e0a0c7925e95:0x424a341bb6f04cec!8m2!3d39.5036411!4d-76.3818313!16s%2Fg%2F11c132tvkf?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"  >
-        <img src="https://www.belairautoservice.biz/images/map-img.webp" alt="Map Image" width="1800" height="500"  />
+    <a href="https://www.google.com/maps/place/1515+Belair+Rd,+Fallston,+MD+21047,+USA/@39.5036411,-76.3844062,17z/data=!3m1!4b1!4m6!3m5!1s0x89c7e0a0c7925e95:0x424a341bb6f04cec!8m2!3d39.5036411!4d-76.3818313!16s%2Fg%2F11c132tvkf?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" >
+        <img src="https://www.belairautoservice.biz/images/map-img.webp" alt="Map Image" title="Map Image" width="1800" height="500" loading="lazy" />
     </a>
 
 </section>

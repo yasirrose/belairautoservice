@@ -194,7 +194,7 @@ h2.post-title {
         <section class="services-section">
     	        <div class="auto-container">
                         <div class="clearfix">
-                                <h2 class="post-title">See the customer reviews for our auto repair shop in Bel Air, Maryland.</h2>
+                                <h2 class="post-title">See customer reviews for our auto repair shop in Bel Air, Maryland.</h2>
                                 <h4 class="post-sub-title">We really appreciate your support and would love to hear from you!</h4>
                                 <div class="text">
 	                                <p>Your business is very appreciated. We truly value your feedback as we use this information to help us to continue to improve our customer service, overall performance and your experience when working with us.</p>
